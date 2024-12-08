@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App8.Page1">
+    <ContentPage.Resources>
+        <StyleSheet Source="Style.css">
+    </StyleSheet>
+    </ContentPage.Resources>
+
+    <StackLayout Padding="35">
+        <Label Text="Welcome"
+               FontSize="25"
+               FontAttributes="Bold"
+        HorizontalOptions="Center"
+        VerticalOptions="End" />
+
+        <Entry x:Name="usernameEntry"
+               Placeholder="Имя пользователя"
+               Keyboard="Text" />
+
+        <Entry x:Name="passwordEntry"
+               Placeholder="Пароль"
+               IsPassword="True" />
+
+
+        <Button x:Name="loginButton"
+                Text="Войти"
+                Background="black"
+                Clicked="Button_Clicked"
+                TextTransform="None"/>
+        <Button x:Name="passwordbutton"
+        Text="Зарегистрироваться"
+        Background="black"
+        TextTransform="None"
+                 Clicked="Button_Clicked1"/>
+
+
+        
+    </StackLayout>
+</ContentPage>

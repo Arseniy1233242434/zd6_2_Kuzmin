@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App8.Page3">
+    <ContentPage.Resources>
+    <StyleSheet Source="Style.css">
+    </StyleSheet>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout Padding="20"
+              Orientation="Horizontal">
+
+            <StackLayout Padding="10">
+
+                <Label Text="Центробанк РФ:" FontSize="15" HorizontalOptions="Center" TextColor="Black"/>
+                <Label Text="USD: 80.000" TextColor="Black"/>
+                <Label Text="EUR: 86.000" TextColor="Black"/>
+
+
+            </StackLayout>
+
+            <StackLayout Padding="10">
+
+                <Label Text="Текущая дата:" FontSize="Large" HorizontalOptions="Center" TextColor="Black"/>
+                <Label x:Name="DateLabel" Text="Текущая дата:" FontAttributes="Bold" TextColor="Black"/>
+                
+
+
+            </StackLayout>
+
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

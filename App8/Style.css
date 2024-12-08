@@ -1,0 +1,28 @@
+﻿^contentpage {
+    background-color: white;
+}
+
+titletext {
+    font-size: 25;
+}
+
+button {
+    background: red;
+    color: white;
+    font-size: 20;
+    text-align: center;
+    text-decoration-color: white;
+}
+
+label {
+    color: white;
+}
+
+entry {
+    background-color: white;
+    border: thin solid black;
+}
+
+checkbox {
+    color: white
+}

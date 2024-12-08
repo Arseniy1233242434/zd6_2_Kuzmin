@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App8.Page2">
+    <ContentPage.Resources>
+    <StyleSheet Source="Style.css">
+    </StyleSheet>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout Padding="20">
+            
+            <Label Text="Сумма кредита:" TextColor="Black"/>
+            <Entry x:Name="Sum" Keyboard="Numeric" Placeholder="Введите сумму" />
+
+           
+            <Label Text="Срок (месяцев):" TextColor="Black"/>
+            <Entry x:Name="Date" Keyboard="Numeric" Placeholder="Введите срок" />
+
+            
+            <Label Text="Вид платежа:"  TextColor="Black"/>
+            <Picker x:Name="Type">
+                <Picker.Items>
+                    <x:String>Аннуитетный</x:String>
+                    <x:String>Дифференцированный</x:String>
+                </Picker.Items>
+            </Picker>
+
+           
+            <Label Text="Процентная ставка:"  TextColor="Black"/>
+            <Slider x:Name="Slider" Minimum="0" Maximum="30" Value="5" ThumbColor="Blue" BackgroundColor="DeepSkyBlue" HeightRequest="20"/>
+            <Label Text="{Binding Source={x:Reference Slider}, Path=Value, StringFormat='                                         {0:F1}%'}" TextColor="Black"/>
+
+           
+            <Button Text="Рассчитать" 
+               Clicked="ButtonClicked" Background="blue"/>
+
+            <Label Text="Ежемесячный платеж:" TextColor="Black"/>
+            <Label x:Name="MonthPay" Text="..." TextColor="Black"/>
+
+            <Label Text="Общая сумма:" TextColor="Black"/>
+            <Label x:Name="Total" Text="..." TextColor="Black"/>
+
+            <Label Text="Переплата:" TextColor="Black"/>
+            <Label x:Name="OverPay" Text="..." TextColor="Black"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
